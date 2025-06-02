@@ -4,13 +4,11 @@
     <title>@yield('title', 'Laravel App')</title>
 
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
-        @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/tabler-icons.css'])
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
         @php
             $manifestPath = public_path('build/manifest.json');
-            $manifest = file_exists($manifestPath)
-                ? json_decode(file_get_contents($manifestPath), true)
-                : [];
+            $manifest = file_exists($manifestPath) ? json_decode(file_get_contents($manifestPath), true) : [];
             $assets = collect($manifest)->pluck('file')->filter();
         @endphp
 
