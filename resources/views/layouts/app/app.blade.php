@@ -2,7 +2,12 @@
 <html lang="en"> @include('includes.head')
 
 <body class="font-sans-variable">
-    <main class="max-w-(--breakpoint-xl) mx-auto"> @yield('content') </main>
+    @include('includes.navbar')
+    <main>
+        @yield('content')
+    </main>
+    @include('includes.footer')
+
 </body>
 
 </html>

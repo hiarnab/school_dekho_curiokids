@@ -19,6 +19,8 @@
     "dependencies": {
         "@fontsource-variable/inter-tight": "^5.2.5",
         "glob": "^11.0.2",
+        "preline": "^3.0.1",
+        "vanilla-calendar-pro": "^3.0.4",
         "vite-plugin-banner": "^0.8.1"
     }
 }

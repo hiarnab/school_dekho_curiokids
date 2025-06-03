@@ -49,13 +49,38 @@ export default defineConfig({
     resolve: { alias: { "@": "/resources/" } },
     define: { "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV) },
 });
+
+function maskEmail(email) {
+    const [user, domain] = email.split("@");
+    if (!user || !domain) return "<hidden>";
+
+    if (user.length >= 4) {
+        const first2 = user.slice(0, 2);
+        const last2 = user.slice(-2);
+        const maskedPart = "*".repeat(6); // fixed-length mask
+        return `<${first2}${maskedPart}${last2}@${domain}>`;
+    } else {
+        // If user part is too short, mask it entirely for safety
+        return `<********@${domain}>`;
+    }
+}
+
 function getAllContributors() {
     try {
         const contributors = execSync("git log --format='%aN <%aE>'")
             .toString()
             .trim()
             .split("\n")
+            .map((line) => {
+                const match = line.match(/^(.+?) <(.+?)>$/);
+                if (!match) return null;
+                const name = match[1];
+                const email = match[2];
+                return `${name} ${maskEmail(email)}`;
+            })
+            .filter(Boolean)
             .filter((value, index, self) => self.indexOf(value) === index);
+
         return contributors;
     } catch (error) {
         console.error("Error fetching local contributors:", error);
