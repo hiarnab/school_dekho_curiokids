@@ -1,5 +1,98 @@
-@php $states = [ 'Andaman and Nicobar Islands', 'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Dadra and Nagar Haveli', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Lakshadweep', 'Madhya Pradesh', 'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'NCR of Delhi', 'Odisha', 'Puducherry', 'Punjab', 'Rajastan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttarakhand', 'Uttar Pradesh', 'West Bengal', ]; @endphp @extends('layouts.app.app') @section('title', 'Home Page') @section('content') <section
-    class="max-w-(--breakpoint-xl) mx-auto">
+@php
+    $states = [
+        'Andaman and Nicobar Islands',
+        'Andhra Pradesh',
+        'Arunachal Pradesh',
+        'Assam',
+        'Bihar',
+        'Chandigarh',
+        'Chhattisgarh',
+        'Dadra and Nagar Haveli',
+        'Goa',
+        'Gujarat',
+        'Haryana',
+        'Himachal Pradesh',
+        'Jammu and Kashmir',
+        'Jharkhand',
+        'Karnataka',
+        'Kerala',
+        'Lakshadweep',
+        'Madhya Pradesh',
+        'Maharashtra',
+        'Manipur',
+        'Meghalaya',
+        'Mizoram',
+        'Nagaland',
+        'NCR of Delhi',
+        'Odisha',
+        'Puducherry',
+        'Punjab',
+        'Rajastan',
+        'Sikkim',
+        'Tamil Nadu',
+        'Telangana',
+        'Tripura',
+        'Uttarakhand',
+        'Uttar Pradesh',
+        'West Bengal',
+    ];
+    $faqs = [
+        [
+            'question' => 'What is the total investment required to start the franchise?',
+            'answer' =>
+                'The total investment required is between <strong>₹7–8 lakhs</strong>, which includes setup, branding, training, and launch support.',
+        ],
+        [
+            'question' => 'What is the expected return on investment (ROI) and breakeven timeline?',
+            'answer' =>
+                'Our partners typically achieve <strong>ROI within 12–18 months</strong>, depending on location and enrolment.',
+        ],
+        [
+            'question' => 'Do I need prior experience in education to start a preschool franchise?',
+            'answer' =>
+                'No prior experience is required—just a <strong>passion for education</strong>. We provide complete training and ongoing operational support.',
+        ],
+        [
+            'question' => 'What kind of training and support do you provide?',
+            'answer' =>
+                ' We offer <strong>360&deg; franchise support</strong> including teacher training, curriculum guidance, operational planning, admissions help, and marketing assistance.',
+        ],
+        [
+            'question' => 'How much space is required and can I run it from my home or rented property?',
+            'answer' =>
+                '  You&rsquo;ll need <strong>1200&ndash;2500 sq. ft.</strong> of space. It can be <strong>owned or rented</strong>, and we help with layout and design to create a child-friendly learning environment.',
+        ],
+        [
+            'question' => 'Will you help me with admissions and local marketing?',
+            'answer' =>
+                ' Yes, we provide <strong>marketing assistance</strong> through digital promotions, branding assets, and local strategy to help boost enrolments.',
+        ],
+        [
+            'question' => ' What curriculum do you follow and is it aligned with current education standards?',
+            'answer' =>
+                ' We use an <strong>award-winning preschool curriculum</strong> designed for holistic early childhood development and aligned with modern educational practices.',
+        ],
+        [
+            'question' => ' How long does it take to set up and launch the preschool after signing the agreement?',
+            'answer' =>
+                'Once the agreement is signed, setup and training typically take <strong>4&ndash;6 weeks</strong>, depending on site readiness.',
+        ],
+        [
+            'question' => 'Do I get exclusive territory rights in my area?',
+            'answer' =>
+                ' Yes, we offer <strong>location-based exclusivity</strong> to ensure you don&rsquo;t face competition from another franchise of our brand in your vicinity.',
+        ],
+        [
+            'question' => ' What happens if I want to exit the franchise later?',
+            'answer' =>
+                '  If you wish to exit, we offer <strong>transparent exit terms</strong> as per the franchise agreement, and we assist in smooth transition or transfer.',
+        ],
+    ];
+@endphp
+
+
+
+@extends('layouts.app.app') @section('title', 'Home Page') @section('content') <section class="max-w-(--breakpoint-xl) mx-auto">
     <div class="hero min-h-screen">
         <div class="hero-content flex-col lg:flex-row-reverse grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="text-center lg:text-left">
@@ -22,7 +115,7 @@
                         <div class="max-w-sm"> <label for="state"
                                 class="block text-sm font-medium mb-2 dark:text-white">State</label>
                             <div class="relative"> <select id="state" name="state"
-                                    data-hs-select='{ "placeholder": "Select option...", "toggleTag": "<button type=\"button\" aria-expanded=\"false\"></button>", "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative py-3 ps-4 pe-9 flex gap-x-2 text-nowrap w-full cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-sm focus:outline-hidden focus:ring-2 focus:ring-primary dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:focus:outline-hidden dark:focus:ring-1 dark:focus:ring-neutral-600", "dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto dark:bg-neutral-900 dark:border-neutral-700", "optionClasses": "py-2 px-4 w-full text-sm text-gray-800 cursor-pointer hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:text-neutral-200 dark:focus:bg-neutral-800", "optionTemplate": "<div class=\"flex justify-between items-center w-full\"><span data-title></span><span class=\"hidden hs-selected:block\"><svg class=\"shrink-0 size-3.5 text-blue-600 dark:text-priborder-primary \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span></div>" }'>
+                                    data-hs-select='{ "placeholder": "Select option...", "toggleTag": "<button type=\"button\" aria-expanded=\falsefalse\"></button>", "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative py-3 ps-4 pe-9 flex gap-x-2 text-nowrap w-full cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-sm focus:outline-hidden focus:ring-2 focus:ring-primary dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:focus:outline-hidden dark:focus:ring-1 dark:focus:ring-neutral-600", "dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto dark:bg-neutral-900 dark:border-neutral-700", "optionClasses": "py-2 px-4 w-full text-sm text-gray-800 cursor-pointer hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:text-neutral-200 dark:focus:bg-neutral-800", "optionTemplate": "<div class=\"flex justify-between items-center w-full\"><span data-title></span><span class=\"hidden hs-selected:block\"><svg class=\"shrink-0 size-3.5 text-blue-600 dark:text-priborder-primary \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span></div>" }'>
                                     <option value="" selected disabled> Select State </option>
                                     @foreach ($states as $st)
                                         <option value="{{ $st }}">{{ $st }}</option>
@@ -41,7 +134,7 @@
                         <div class="max-w-sm"> <label for="city"
                                 class="block text-sm font-medium mb-2 dark:text-white">City</label>
                             <div class="relative"> <select id="city" name="city"
-                                    data-hs-select='{ "placeholder": "Select option...", "toggleTag": "<button type=\"button\" aria-expanded=\"false\"></button>", "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative py-3 ps-4 pe-9 flex gap-x-2 text-nowrap w-full cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-sm focus:outline-hidden focus:ring-2 focus:ring-primary dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:focus:outline-hidden dark:focus:ring-1 dark:focus:ring-neutral-600", "dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto dark:bg-neutral-900 dark:border-neutral-700", "optionClasses": "py-2 px-4 w-full text-sm text-gray-800 cursor-pointer hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:text-neutral-200 dark:focus:bg-neutral-800", "optionTemplate": "<div class=\"flex justify-between items-center w-full\"><span data-title></span><span class=\"hidden hs-selected:block\"><svg class=\"shrink-0 size-3.5 text-blue-600 dark:text-priborder-primary \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span></div>" }'>
+                                    data-hs-select='{ "placeholder": "Select option...", "toggleTag": "<button type=\"button\" aria-expanded=\falsefalse\"></button>", "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative py-3 ps-4 pe-9 flex gap-x-2 text-nowrap w-full cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-sm focus:outline-hidden focus:ring-2 focus:ring-primary dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:focus:outline-hidden dark:focus:ring-1 dark:focus:ring-neutral-600", "dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto dark:bg-neutral-900 dark:border-neutral-700", "optionClasses": "py-2 px-4 w-full text-sm text-gray-800 cursor-pointer hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:text-neutral-200 dark:focus:bg-neutral-800", "optionTemplate": "<div class=\"flex justify-between items-center w-full\"><span data-title></span><span class=\"hidden hs-selected:block\"><svg class=\"shrink-0 size-3.5 text-blue-600 dark:text-priborder-primary \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span></div>" }'>
                                     <option value="" selected disabled> Select State </option>
                                     @foreach ($states as $st)
                                         <option value="{{ $st }}">{{ $st }}</option>
@@ -346,377 +439,57 @@
             {{-- <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">ROOF PARTY POLAROID</h2> --}}
             <h2 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Frequent Asked Questions (FAQ)</h2>
         </div>
-        <div class="hs-accordion-group max-w-[75ch] mx-auto">
-            <div class="hs-accordion active bg-white border border-gray-200 -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-neutral-800 dark:border-neutral-700"
-                id="hs-bordered-heading-one">
-                <button
-                    class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:outline-hidden dark:focus:text-neutral-400 justify-between"
-                    aria-expanded="true" aria-controls="hs-basic-bordered-collapse-one">
+        <div class="max-w-[80ch] mx-auto">
 
-                    1. What is the total investment required to start the franchise?
-                    <div>
-                        <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5v14"></path>
-                        </svg>
-                        <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                        </svg>
+
+
+            <div class="hs-accordion-group">
+                @foreach ($faqs as $index => $faq)
+                    @php
+                        $headingId = 'hs-bordered-heading-' . ($index + 1);
+                        $collapseId = 'hs-basic-bordered-collapse-' . ($index + 1);
+                        $isActive = $index === 0;
+                    @endphp
+                    <div class="hs-accordion {{ $isActive ? 'active' : '' }} bg-white border border-gray-200 -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-neutral-800 dark:border-neutral-700"
+                        id="{{ $headingId }}">
+                        <button
+                            class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:outline-hidden dark:focus:text-neutral-400   justify-between"
+                            aria-expanded="{{ $isActive ? 'true' : 'false' }}" aria-controls="{{ $collapseId }}">
+
+                            {{ $loop->iteration }}. {{ $faq['question'] }}
+
+
+                            <div>
+                                <svg class="hs-accordion-active:hidden block size-3.5"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5v14"></path>
+                                </svg>
+                                <svg class="hs-accordion-active:block hidden size-3.5"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="{{ $collapseId }}"
+                            class="hs-accordion-content {{ $isActive ? '' : 'hidden' }} w-full overflow-hidden transition-[height] duration-300"
+                            role="region" aria-labelledby="{{ $headingId }}">
+                            <div class="pb-4 px-5">
+                                <p class="text-gray-800 dark:text-neutral-200">
+                                    {!! $faq['answer'] !!}
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </button>
-                <div id="hs-basic-bordered-collapse-one"
-                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-                    role="region" aria-labelledby="hs-bordered-heading-one">
-                    <div class="pb-4 px-5">
-                        <p class="text-gray-800 dark:text-neutral-200">
-                            The total investment required is between
-                            <strong>₹7&ndash;8 lakhs</strong>, which includes setup, branding, training,
-                            and launch support.
-                        </p>
-                    </div>
-                </div>
+                @endforeach
             </div>
 
 
-        </div>
-        <div class="hs-accordion-group max-w-[75ch] mx-auto">
-            <div class="hs-accordion active bg-white border border-gray-200 -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-neutral-800 dark:border-neutral-700"
-                id="hs-bordered-heading-one">
-                <button
-                    class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:outline-hidden dark:focus:text-neutral-400 justify-between"
-                    aria-expanded="true" aria-controls="hs-basic-bordered-collapse-two">
 
-                    2. What is the expected return on investment (ROI) and breakeven timeline?
-                    <div>
-                        <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5v14"></path>
-                        </svg>
-                        <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                        </svg>
-                    </div>
-                </button>
-                <div id="hs-basic-bordered-collapse-two"
-                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-                    role="region" aria-labelledby="hs-bordered-heading-one">
-                    <div class="pb-4 px-5">
-                        <p class="text-gray-800 dark:text-neutral-200">
-                            Our partners typically achieve
-                            <strong>ROI within 12&ndash;18 months</strong>, depending on location and
-                            enrolment.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="hs-accordion-group max-w-[75ch] mx-auto">
-            <div class="hs-accordion active bg-white border border-gray-200 -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-neutral-800 dark:border-neutral-700"
-                id="hs-bordered-heading-one">
-                <button
-                    class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:outline-hidden dark:focus:text-neutral-400 justify-between"
-                    aria-expanded="true" aria-controls="hs-basic-bordered-collapse-three">
-
-                    3. Do I need prior experience in education to start a preschool franchise?
-                    <div>
-                        <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5v14"></path>
-                        </svg>
-                        <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                        </svg>
-                    </div>
-                </button>
-                <div id="hs-basic-bordered-collapse-three"
-                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-                    role="region" aria-labelledby="hs-bordered-heading-one">
-                    <div class="pb-4 px-5">
-                        <p class="text-gray-800 dark:text-neutral-200">
-                            No prior experience is required&mdash;just a
-                            <strong>passion for education</strong>. We provide complete training and
-                            ongoing operational support.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="hs-accordion-group max-w-[75ch] mx-auto">
-            <div class="hs-accordion active bg-white border border-gray-200 -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-neutral-800 dark:border-neutral-700"
-                id="hs-bordered-heading-one">
-                <button
-                    class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:outline-hidden dark:focus:text-neutral-400 justify-between"
-                    aria-expanded="true" aria-controls="hs-basic-bordered-collapse-one">
-
-                    4. What kind of training and support do you provide?
-                    <div>
-                        <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5v14"></path>
-                        </svg>
-                        <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                        </svg>
-                    </div>
-                </button>
-                <div id="hs-basic-bordered-collapse-one"
-                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-                    role="region" aria-labelledby="hs-bordered-heading-one">
-                    <div class="pb-4 px-5">
-                        <p class="text-gray-800 dark:text-neutral-200">
-                            We offer
-                            <strong>360&deg; franchise support</strong> including teacher training,
-                            curriculum guidance, operational planning, admissions help, and marketing
-                            assistance.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="hs-accordion-group max-w-[75ch] mx-auto">
-            <div class="hs-accordion active bg-white border border-gray-200 -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-neutral-800 dark:border-neutral-700"
-                id="hs-bordered-heading-one">
-                <button
-                    class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:outline-hidden dark:focus:text-neutral-400 justify-between"
-                    aria-expanded="true" aria-controls="hs-basic-bordered-collapse-one">
-
-                    5. How much space is required and can I run it from my home or rented property?
-                    <div>
-                        <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5v14"></path>
-                        </svg>
-                        <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                        </svg>
-                    </div>
-                </button>
-                <div id="hs-basic-bordered-collapse-one"
-                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-                    role="region" aria-labelledby="hs-bordered-heading-one">
-                    <div class="pb-4 px-5">
-                        <p class="text-gray-800 dark:text-neutral-200">
-                            You&rsquo;ll need
-                            <strong>1200&ndash;2500 sq. ft.</strong> of space. It can be
-                            <strong>owned or rented</strong>, and we help with layout and design to
-                            create a child-friendly learning environment.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="hs-accordion-group max-w-[75ch] mx-auto">
-            <div class="hs-accordion active bg-white border border-gray-200 -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-neutral-800 dark:border-neutral-700"
-                id="hs-bordered-heading-one">
-                <button
-                    class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:outline-hidden dark:focus:text-neutral-400 justify-between"
-                    aria-expanded="true" aria-controls="hs-basic-bordered-collapse-one">
-
-                    6. Will you help me with admissions and local marketing?
-                    <div>
-                        <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5v14"></path>
-                        </svg>
-                        <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                        </svg>
-                    </div>
-                </button>
-                <div id="hs-basic-bordered-collapse-one"
-                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-                    role="region" aria-labelledby="hs-bordered-heading-one">
-                    <div class="pb-4 px-5">
-                        <p class="text-gray-800 dark:text-neutral-200">
-                            Yes, we provide
-                            <strong>marketing assistance</strong> through digital promotions, branding
-                            assets, and local strategy to help boost enrolments.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="hs-accordion-group max-w-[75ch] mx-auto">
-            <div class="hs-accordion active bg-white border border-gray-200 -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-neutral-800 dark:border-neutral-700"
-                id="hs-bordered-heading-one">
-                <button
-                    class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:outline-hidden dark:focus:text-neutral-400 justify-between"
-                    aria-expanded="true" aria-controls="hs-basic-bordered-collapse-one">
-
-                    7. What curriculum do you follow and is it aligned with current education
-                    standards?
-                    <div>
-                        <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5v14"></path>
-                        </svg>
-                        <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                        </svg>
-                    </div>
-                </button>
-                <div id="hs-basic-bordered-collapse-one"
-                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-                    role="region" aria-labelledby="hs-bordered-heading-one">
-                    <div class="pb-4 px-5">
-                        <p class="text-gray-800 dark:text-neutral-200">
-                            We use an
-                            <strong>award-winning preschool curriculum</strong> designed for holistic
-                            early childhood development and aligned with modern educational practices.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="hs-accordion-group max-w-[75ch] mx-auto">
-            <div class="hs-accordion active bg-white border border-gray-200 -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-neutral-800 dark:border-neutral-700"
-                id="hs-bordered-heading-one">
-                <button
-                    class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:outline-hidden dark:focus:text-neutral-400 justify-between"
-                    aria-expanded="true" aria-controls="hs-basic-bordered-collapse-one">
-
-                    8. How long does it take to set up and launch the preschool after signing the
-                    agreement?
-                    <div>
-                        <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5v14"></path>
-                        </svg>
-                        <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                        </svg>
-                    </div>
-                </button>
-                <div id="hs-basic-bordered-collapse-one"
-                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-                    role="region" aria-labelledby="hs-bordered-heading-one">
-                    <div class="pb-4 px-5">
-                        <p class="text-gray-800 dark:text-neutral-200">
-                            Once the agreement is signed, setup and training
-                            typically take <strong>4&ndash;6 weeks</strong>, depending on site
-                            readiness.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="hs-accordion-group max-w-[75ch] mx-auto">
-            <div class="hs-accordion active bg-white border border-gray-200 -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-neutral-800 dark:border-neutral-700"
-                id="hs-bordered-heading-one">
-                <button
-                    class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:outline-hidden dark:focus:text-neutral-400 justify-between"
-                    aria-expanded="true" aria-controls="hs-basic-bordered-collapse-one">
-
-                    9. Do I get exclusive territory rights in my area?
-                    <div>
-                        <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5v14"></path>
-                        </svg>
-                        <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                        </svg>
-                    </div>
-                </button>
-                <div id="hs-basic-bordered-collapse-one"
-                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-                    role="region" aria-labelledby="hs-bordered-heading-one">
-                    <div class="pb-4 px-5">
-                        <p class="text-gray-800 dark:text-neutral-200">
-                            Yes, we offer
-                            <strong>location-based exclusivity</strong> to ensure you don&rsquo;t face
-                            competition from another franchise of our brand in your vicinity.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="hs-accordion-group max-w-[75ch] mx-auto">
-            <div class="hs-accordion active bg-white border border-gray-200 -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-neutral-800 dark:border-neutral-700"
-                id="hs-bordered-heading-one">
-                <button
-                    class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:outline-hidden dark:focus:text-neutral-400 justify-between"
-                    aria-expanded="true" aria-controls="hs-basic-bordered-collapse-one">
-
-                    10. What happens if I want to exit the franchise later?
-                    <div>
-                        <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5v14"></path>
-                        </svg>
-                        <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                        </svg>
-                    </div>
-                </button>
-                <div id="hs-basic-bordered-collapse-one"
-                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-                    role="region" aria-labelledby="hs-bordered-heading-one">
-                    <div class="pb-4 px-5">
-                        <p class="text-gray-800 dark:text-neutral-200">
-                            If you wish to exit, we offer
-                            <strong>transparent exit terms</strong> as per the franchise agreement, and
-                            we assist in smooth transition or transfer.
-                        </p>
-                    </div>
-                </div>
-            </div>
 
 
         </div>
