@@ -292,9 +292,9 @@
             <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                 <li>
                     <div class="timeline-middle">
-                        <i class="ti ti-number-1 h-2 text-xs w-2 p-0.5 bg-black rounded-full text-white "></i>
+                        <i class="ti ti-number-1 h-2 text-xs w-2 p-0.5 mx-1 bg-black rounded-full text-white "></i>
                     </div>
-                    <div class="timeline-start md:mb-10 md:text-end">
+                    <div class="timeline-start md:mb-10 mt-2 md:text-end">
                         <time class="font-mono  italic">STEP 1</time>
                         <div class="text-lg ">Make Enquiry</div>
                         {{-- Lorem ipsum dolor sit amet. --}}
@@ -304,9 +304,9 @@
                 <li>
                     <hr />
                     <div class="timeline-middle">
-                        <i class="ti ti-number-2 h-2 text-xs w-2 p-0.5 bg-black rounded-full text-white "></i>
+                        <i class="ti ti-number-2 h-2 text-xs w-2 p-0.5 mx-1 bg-black rounded-full text-white "></i>
                     </div>
-                    <div class="timeline-end md:mb-10">
+                    <div class="timeline-end md:mb-10 mt-2">
                         <time class="font-mono italic  ">STEP 2</time>
                         <div class="text-lg ">Discussion & Proposal</div>
                         {{-- Lorem ipsum dolor sit amet. --}}
@@ -316,9 +316,9 @@
                 <li>
                     <hr />
                     <div class="timeline-middle">
-                        <i class="ti ti-number-3 h-2 text-xs w-2 p-0.5 bg-black rounded-full text-white "></i>
+                        <i class="ti ti-number-3 h-2 text-xs w-2 p-0.5 mx-1 bg-black rounded-full text-white "></i>
                     </div>
-                    <div class="timeline-start md:mb-10 md:text-end">
+                    <div class="timeline-start md:mb-10 mt-2 md:text-end">
                         <time class="font-mono italic  ">STEP 3</time>
                         <div class="text-lg ">Site Visit & Agreement</div>
                         {{-- Lorem ipsum dolor sit amet. --}}
@@ -328,9 +328,9 @@
                 <li>
                     <hr />
                     <div class="timeline-middle">
-                        <i class="ti ti-number-4 h-2 text-xs w-2 p-0.5 bg-black rounded-full text-white "></i>
+                        <i class="ti ti-number-4 h-2 text-xs w-2 p-0.5 mx-1 bg-black rounded-full text-white "></i>
                     </div>
-                    <div class="timeline-end md:mb-10">
+                    <div class="timeline-end md:mb-10 mt-2">
                         <time class="font-mono italic  ">STEP 4</time>
                         <div class="text-lg ">Setup & Training</div>
                         {{-- Lorem ipsum dolor sit amet. --}}
@@ -340,9 +340,9 @@
                 <li>
                     <hr />
                     <div class="timeline-middle">
-                        <i class="ti ti-number-5 h-2 text-xs w-2 p-0.5 bg-black rounded-full text-white "></i>
+                        <i class="ti ti-number-5 h-2 text-xs w-2 p-0.5 mx-1 bg-black rounded-full text-white "></i>
                     </div>
-                    <div class="timeline-start md:mb-10 md:text-end">
+                    <div class="timeline-start md:mb-10 mt-2 md:text-end">
                         <time class="font-mono italic  ">STEP 5</time>
                         <div class="text-lg ">Launch & Ongoing Support</div>
                         {{-- Lorem ipsum dolor sit amet. --}}
