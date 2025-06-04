@@ -1,7 +1,9 @@
 <form class="card-body">
-    <h2 class="text-2xl mb-3 text-center">Apply for Franchise</h2>
+    <div class="flex justify-center">
+        <h2 class="text-2xl mb-3 text-center">Apply for Franchise</h2>
+    </div>
     <fieldset class="fieldset">
-        <div class="max-w-sm">
+        <div class="">
             <label
                 for="name"
                 class="block text-sm font-medium mb-2 dark:text-white"
@@ -15,7 +17,7 @@
                 required
             />
         </div>
-        <div class="max-w-sm">
+        <div class="">
             <label
                 for="mob"
                 class="block text-sm font-medium mb-2 dark:text-white"
@@ -29,7 +31,7 @@
                 required
             />
         </div>
-        <div class="max-w-sm">
+        <div class="">
             <label
                 for="state"
                 class="block text-sm font-medium mb-2 dark:text-white"
@@ -65,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <div class="max-w-sm">
+        <div class="">
             <label
                 for="city"
                 class="block text-sm font-medium mb-2 dark:text-white"

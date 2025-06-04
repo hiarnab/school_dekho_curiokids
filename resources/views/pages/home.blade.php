@@ -235,11 +235,10 @@
             </div>
         </div>
         <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6  justify-center">
-            {{-- <button class="btn  max-w-sm  btn-primary w-full uppercase font-semibold tracking-wider">Apply Now 
-            </button> --}}
+    
 
             <button type="button"
-                class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                class="btn  max-w-sm  btn-primary w-full uppercase font-semibold tracking-wider"
                 aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-vertically-centered-modal"
                 data-hs-overlay="#hs-vertically-centered-modal">
                 Apply Now <i class="ti ti-arrow-narrow-right"></i>
@@ -251,13 +250,13 @@
                 <div
                     class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-56px)] flex items-center">
                     <div
-                        class="w-full flex flex-col max-w-sm bg-white border border-gray-200 shadow-2xs rounded-xl pointer-events-auto dark:bg-neutral-800 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                        class="w-full flex flex-col  bg-white border border-gray-200 shadow-2xs rounded-xl pointer-events-auto dark:bg-neutral-800 dark:border-neutral-700 dark:shadow-neutral-700/70">
 
                         {{-- <h3 id="hs-vertically-centered-modal-label"
                                 class="font-bold text-gray-800 dark:text-white">
                                 Modal title
                             </h3> --}}
-                        <div class="relative max-w-sm">
+                        <div class="relative ">
                             @include('sections/forms/captureForm')
                             <div class=" absolute top-2 right-2">
                                 <button type="button"
@@ -280,7 +279,7 @@
             </div>
         </div>
     </div>
-</section>
+</section>   
 <section class="bg-base-200">
     <div class="container px-5 py-24 mx-auto flex flex-wrap">
         <div
@@ -293,11 +292,11 @@
             <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                 <li>
                     <div class="timeline-middle">
-                        <i class="ti ti-number-1 h-4 w-4 p-0.5 bg-black rounded-full text-white "></i>
+                        <i class="ti ti-number-1 h-2 text-xs w-2 p-0.5 bg-black rounded-full text-white "></i>
                     </div>
                     <div class="timeline-start md:mb-10 md:text-end">
-                        <time class="font-mono md:text-2xl italic">STEP 1</time>
-                        <div class="text-lg font-semibold">Make Enquiry</div>
+                        <time class="font-mono  italic">STEP 1</time>
+                        <div class="text-lg ">Make Enquiry</div>
                         {{-- Lorem ipsum dolor sit amet. --}}
                     </div>
                     <hr />
@@ -305,11 +304,11 @@
                 <li>
                     <hr />
                     <div class="timeline-middle">
-                        <i class="ti ti-number-2 h-4 w-4 p-0.5 bg-black rounded-full text-white "></i>
+                        <i class="ti ti-number-2 h-2 text-xs w-2 p-0.5 bg-black rounded-full text-white "></i>
                     </div>
                     <div class="timeline-end md:mb-10">
-                        <time class="font-mono italic md:text-2xl ">STEP 2</time>
-                        <div class="text-lg font-semibold">Discussion & Proposal</div>
+                        <time class="font-mono italic  ">STEP 2</time>
+                        <div class="text-lg ">Discussion & Proposal</div>
                         {{-- Lorem ipsum dolor sit amet. --}}
                     </div>
                     <hr />
@@ -317,11 +316,11 @@
                 <li>
                     <hr />
                     <div class="timeline-middle">
-                        <i class="ti ti-number-3 h-4 w-4 p-0.5 bg-black rounded-full text-white "></i>
+                        <i class="ti ti-number-3 h-2 text-xs w-2 p-0.5 bg-black rounded-full text-white "></i>
                     </div>
                     <div class="timeline-start md:mb-10 md:text-end">
-                        <time class="font-mono italic md:text-2xl ">STEP 3</time>
-                        <div class="text-lg font-semibold">Site Visit & Agreement</div>
+                        <time class="font-mono italic  ">STEP 3</time>
+                        <div class="text-lg ">Site Visit & Agreement</div>
                         {{-- Lorem ipsum dolor sit amet. --}}
                     </div>
                     <hr />
@@ -329,11 +328,11 @@
                 <li>
                     <hr />
                     <div class="timeline-middle">
-                        <i class="ti ti-number-4 h-4 w-4 p-0.5 bg-black rounded-full text-white "></i>
+                        <i class="ti ti-number-4 h-2 text-xs w-2 p-0.5 bg-black rounded-full text-white "></i>
                     </div>
                     <div class="timeline-end md:mb-10">
-                        <time class="font-mono italic md:text-2xl ">STEP 4</time>
-                        <div class="text-lg font-semibold">Setup & Training</div>
+                        <time class="font-mono italic  ">STEP 4</time>
+                        <div class="text-lg ">Setup & Training</div>
                         {{-- Lorem ipsum dolor sit amet. --}}
                     </div>
                     <hr />
@@ -341,11 +340,11 @@
                 <li>
                     <hr />
                     <div class="timeline-middle">
-                        <i class="ti ti-number-5 h-4 w-4 p-0.5 bg-black rounded-full text-white "></i>
+                        <i class="ti ti-number-5 h-2 text-xs w-2 p-0.5 bg-black rounded-full text-white "></i>
                     </div>
                     <div class="timeline-start md:mb-10 md:text-end">
-                        <time class="font-mono italic md:text-2xl ">STEP 5</time>
-                        <div class="text-lg font-semibold">Launch & Ongoing Support</div>
+                        <time class="font-mono italic  ">STEP 5</time>
+                        <div class="text-lg ">Launch & Ongoing Support</div>
                         {{-- Lorem ipsum dolor sit amet. --}}
                     </div>
                 </li>
