@@ -88,6 +88,33 @@
                 '  If you wish to exit, we offer <strong>transparent exit terms</strong> as per the franchise agreement, and we assist in smooth transition or transfer.',
         ],
     ];
+
+    $testimonials = [
+        [
+            'name' => 'Amit Verma',
+            'location' => 'Pune',
+            'quote' => 'With their full support, I started my first preschool and broke even in just 14 months!',
+            'image' => 'https://dummyimage.com/106x106',
+        ],
+        [
+            'name' => 'Ritu Sharma',
+            'location' => 'Lucknow',
+            'quote' => 'This franchise helped me turn my passion into a profitable preschool in my own city.',
+            'image' => 'https://dummyimage.com/106x106',
+        ],
+        [
+            'name' => 'Nilesh Patel',
+            'location' => 'Gujarat',
+            'quote' => 'From teacher to proud owner of 3 branches—thanks to their expert guidance!',
+            'image' => 'https://dummyimage.com/106x106',
+        ],
+        [
+            'name' => 'Pooja Das',
+            'location' => 'Siliguri',
+            'quote' => 'Even in a small town, my preschool became the top choice for parents within months.',
+            'image' => 'https://dummyimage.com/106x106',
+        ],
+    ];
 @endphp
 
 
@@ -286,9 +313,9 @@
                         <i class="ti ti-number-1 h-4 w-4 p-0.5 bg-black rounded-full text-white "></i>
                     </div>
                     <div class="timeline-start md:mb-10 md:text-end">
-                        <time class="font-mono italic">STEP 1</time>
+                        <time class="font-mono md:text-2xl italic">STEP 1</time>
                         <div class="text-lg font-semibold">Make Enquiry</div>
-                        Lorem ipsum dolor sit amet.
+                        {{-- Lorem ipsum dolor sit amet. --}}
                     </div>
                     <hr />
                 </li>
@@ -298,9 +325,9 @@
                         <i class="ti ti-number-2 h-4 w-4 p-0.5 bg-black rounded-full text-white "></i>
                     </div>
                     <div class="timeline-end md:mb-10">
-                        <time class="font-mono italic">STEP 2</time>
+                        <time class="font-mono italic md:text-2xl ">STEP 2</time>
                         <div class="text-lg font-semibold">Discussion & Proposal</div>
-                        Lorem ipsum dolor sit amet.
+                        {{-- Lorem ipsum dolor sit amet. --}}
                     </div>
                     <hr />
                 </li>
@@ -310,9 +337,9 @@
                         <i class="ti ti-number-3 h-4 w-4 p-0.5 bg-black rounded-full text-white "></i>
                     </div>
                     <div class="timeline-start md:mb-10 md:text-end">
-                        <time class="font-mono italic">STEP 3</time>
+                        <time class="font-mono italic md:text-2xl ">STEP 3</time>
                         <div class="text-lg font-semibold">Site Visit & Agreement</div>
-                        Lorem ipsum dolor sit amet.
+                        {{-- Lorem ipsum dolor sit amet. --}}
                     </div>
                     <hr />
                 </li>
@@ -322,9 +349,9 @@
                         <i class="ti ti-number-4 h-4 w-4 p-0.5 bg-black rounded-full text-white "></i>
                     </div>
                     <div class="timeline-end md:mb-10">
-                        <time class="font-mono italic">STEP 4</time>
+                        <time class="font-mono italic md:text-2xl ">STEP 4</time>
                         <div class="text-lg font-semibold">Setup & Training</div>
-                        Lorem ipsum dolor sit amet.
+                        {{-- Lorem ipsum dolor sit amet. --}}
                     </div>
                     <hr />
                 </li>
@@ -334,9 +361,9 @@
                         <i class="ti ti-number-5 h-4 w-4 p-0.5 bg-black rounded-full text-white "></i>
                     </div>
                     <div class="timeline-start md:mb-10 md:text-end">
-                        <time class="font-mono italic">STEP 5</time>
+                        <time class="font-mono italic md:text-2xl ">STEP 5</time>
                         <div class="text-lg font-semibold">Launch & Ongoing Support</div>
-                        Lorem ipsum dolor sit amet.
+                        {{-- Lorem ipsum dolor sit amet. --}}
                     </div>
                 </li>
             </ul>
@@ -351,85 +378,59 @@
 <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">
         <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Testimonials</h1>
-        <div data-hs-carousel='{ "loadingClasses": "opacity-0", "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500", "isAutoPlay": true, "slidesQty": { "xs": 1, "lg": 3 },"isAutoHeight": true}'
+
+        <div data-hs-carousel='{ "loadingClasses": "opacity-0", "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500", "isAutoPlay": true, "slidesQty": { "xs": 1, "lg": 3 }, "isAutoHeight": true }'
             class="relative">
             <div
-                class="hs-carousel relative overflow-hidden w-full  md:min-h-[268px] min-h-[290px] bg-white rounded-lg">
+                class="hs-carousel relative overflow-hidden w-full md:min-h-[268px] min-h-[290px] bg-white rounded-lg">
                 <div
                     class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-                    <div class="hs-carousel-slide">
-                        <div class="p-4 w-full">
-                            <div class="h-full bg-gray-100 p-8 rounded"> <i
-                                    class="ti ti-quote text-3xl block w-5 h-5 text-gray-400 mb-4"></i>
-                                <p class="leading-relaxed mb-6">With their full support, I started my first preschool
-                                    and broke even in just 14 months!</p> <a class="inline-flex items-center"> <img
-                                        alt="testimonial" src="https://dummyimage.com/106x106"
-                                        class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"> <span
-                                        class="flex-grow flex flex-col pl-4"> <span
-                                            class="title-font font-medium text-gray-900">Amit Verma </span> <span
-                                            class="text-gray-500 text-sm">Pune</span> </span> </a>
+                    @foreach ($testimonials as $testimonial)
+                        <div class="hs-carousel-slide">
+                            <div class="p-4 w-full">
+                                <div class="h-full bg-gray-100 p-8 rounded">
+                                    <i class="ti ti-quote text-3xl block w-5 h-5 text-gray-400 mb-4"></i>
+                                    <p class="leading-relaxed mb-6">{{ $testimonial['quote'] }}</p>
+                                    <a class="inline-flex items-center">
+                                        <img alt="testimonial" src="{{ $testimonial['image'] }}"
+                                            class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                                        <span class="flex-grow flex flex-col pl-4">
+                                            <span
+                                                class="title-font font-medium text-gray-900">{{ $testimonial['name'] }}</span>
+                                            <span class="text-gray-500 text-sm">{{ $testimonial['location'] }}</span>
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="hs-carousel-slide">
-                        <div class="p-4 w-full">
-                            <div class="h-full bg-gray-100 p-8 rounded"> <i
-                                    class="ti ti-quote text-3xl block w-5 h-5 text-gray-400 mb-4"></i>
-                                <p class="leading-relaxed mb-6">This franchise helped me turn my passion into a
-                                    profitable preschool in my own city.</p> <a class="inline-flex items-center"> <img
-                                        alt="testimonial" src="https://dummyimage.com/106x106"
-                                        class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"> <span
-                                        class="flex-grow flex flex-col pl-4"> <span
-                                            class="title-font font-medium text-gray-900"> Ritu Sharma </span> <span
-                                            class="text-gray-500 text-sm">Lucknow</span> </span> </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hs-carousel-slide">
-                        <div class="p-4 w-full">
-                            <div class="h-full bg-gray-100 p-8 rounded"> <i
-                                    class="ti ti-quote text-3xl block w-5 h-5 text-gray-400 mb-4"></i>
-                                <p class="leading-relaxed mb-6">From teacher to proud owner of 3 branches—thanks to
-                                    their expert guidance!</p> <a class="inline-flex items-center"> <img
-                                        alt="testimonial" src="https://dummyimage.com/106x106"
-                                        class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"> <span
-                                        class="flex-grow flex flex-col pl-4"> <span
-                                            class="title-font font-medium text-gray-900"> Nilesh Patel </span> <span
-                                            class="text-gray-500 text-sm">Gujarat</span> </span> </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hs-carousel-slide">
-                        <div class="p-4 w-full">
-                            <div class="h-full bg-gray-100 p-8 rounded"> <i
-                                    class="ti ti-quote text-3xl block w-5 h-5 text-gray-400 mb-4"></i>
-                                <p class="leading-relaxed mb-6">Even in a small town, my preschool became the top
-                                    choice for parents within months.</p> <a class="inline-flex items-center"> <img
-                                        alt="testimonial" src="https://dummyimage.com/106x106"
-                                        class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"> <span
-                                        class="flex-grow flex flex-col pl-4"> <span
-                                            class="title-font font-medium text-gray-900"> Pooja Das </span> <span
-                                            class="text-gray-500 text-sm">Siliguri</span> </span> </a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
-            </div> <button type="button"
+            </div>
+            <button type="button"
                 class="hs-carousel-prev hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-11.5 h-full text-gray-800 hover:bg-gray-800/10 focus:outline-hidden focus:bg-gray-800/10 rounded-s-lg dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
-                <span class="text-2xl" aria-hidden="true"> <svg class="shrink-0 size-5"
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
+                <span class="text-2xl" aria-hidden="true">
+                    <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
                         <path d="m15 18-6-6 6-6"></path>
-                    </svg> </span> <span class="sr-only">Previous</span> </button> <button type="button"
+                    </svg>
+                </span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button type="button"
                 class="hs-carousel-next hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-11.5 h-full text-gray-800 hover:bg-gray-800/10 focus:outline-hidden focus:bg-gray-800/10 rounded-e-lg dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
-                <span class="sr-only">Next</span> <span class="text-2xl" aria-hidden="true"> <svg
-                        class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                <span class="sr-only">Next</span>
+                <span class="text-2xl" aria-hidden="true">
+                    <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round">
                         <path d="m9 18 6-6-6-6"></path>
-                    </svg> </span> </button>
+                    </svg>
+                </span>
+            </button>
         </div>
+
+
 </section>
 
 
@@ -455,10 +456,7 @@
                         <button
                             class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:outline-hidden dark:focus:text-neutral-400   justify-between"
                             aria-expanded="{{ $isActive ? 'true' : 'false' }}" aria-controls="{{ $collapseId }}">
-
                             {{ $loop->iteration }}. {{ $faq['question'] }}
-
-
                             <div>
                                 <svg class="hs-accordion-active:hidden block size-3.5"
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
