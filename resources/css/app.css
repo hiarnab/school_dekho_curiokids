@@ -1,11 +1,160 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
+@import "../../node_modules/@fontsource-variable/inter-tight";
+@import "../../node_modules/@fontsource-variable/inter-tight/wght.css";
+@import "../../node_modules/@fontsource-variable/inter-tight/wght-italic.css";
+
+@import "../../node_modules/preline/variants.css";
+
+@import "./tabler-icons.css";
+
+@source "../../node_modules/preline/dist/*.js";
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
+@plugin "daisyui";
+@plugin "@tailwindcss/typography";
+
+@import "./tabler-icons.css";
+
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+
+    /* --color-smalt-50: #ebf7ff;
+    --color-smalt-100: #d1edff;
+    --color-smalt-200: #aee0ff;
+    --color-smalt-300: #76cfff;
+    --color-smalt-400: #35b3ff;
+    --color-smalt-500: #078bff;
+    --color-smalt-600: #0065ff;
+    --color-smalt-700: #004cff;
+    --color-smalt-800: #003ed7;
+    --color-smalt-900: #00379e;
+    --color-smalt-950: #062465;
+
+    --color-bright-sun-50: #fefce8;
+    --color-bright-sun-100: #fffac2;
+    --color-bright-sun-200: #fff287;
+    --color-bright-sun-300: #ffe343;
+    --color-bright-sun-400: #ffd325;
+    --color-bright-sun-500: #efb603;
+    --color-bright-sun-600: #ce8c00;
+    --color-bright-sun-700: #a46304;
+    --color-bright-sun-800: #884d0b;
+    --color-bright-sun-900: #733f10;
+    --color-bright-sun-950: #432005;
+
+    --color-sazerac-50: #fff8ed;
+    --color-sazerac-100: #fff3e1;
+    --color-sazerac-200: #fed9aa;
+    --color-sazerac-300: #fdbe74;
+    --color-sazerac-400: #fb973c;
+    --color-sazerac-500: #f97916;
+    --color-sazerac-600: #ea5e0c;
+    --color-sazerac-700: #c2460c;
+    --color-sazerac-800: #9a3812;
+    --color-sazerac-900: #7c3012;
+    --color-sazerac-950: #431607; */
+}
+
+@layer base {
+    button:not(:disabled),
+    [role="button"]:not(:disabled) {
+        cursor: pointer;
+    }
+
+    body {
+        font-family: "Inter Tight Variable";
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply text-balance;
+    }
+
+    p {
+        @apply text-pretty;
+        max-width: 80ch;
+    }
+}
+
+/* Defaults hover styles on all devices */
+@custom-variant hover (&:hover);
+
+@plugin "daisyui/theme" {
+    name: "lightNew";
+    default: true;
+    prefersdark: true;
+    color-scheme: "dark";
+    --color-base-100: oklch(98% 0.003 247.858);
+    --color-base-200: oklch(96% 0.007 247.896);
+    --color-base-300: oklch(92% 0.013 255.508);
+    --color-base-content: oklch(20% 0.042 265.755);
+    --color-primary: oklch(35% 0.144 278.697);
+    --color-primary-content: oklch(93% 0.034 272.788);
+    --color-secondary: oklch(85% 0.199 91.936);
+    --color-secondary-content: oklch(27% 0.072 132.109);
+    --color-accent: oklch(35% 0.144 278.697);
+    --color-accent-content: oklch(93% 0.034 272.788);
+    --color-neutral: oklch(92% 0 0);
+    --color-neutral-content: oklch(21% 0.006 285.885);
+    --color-info: oklch(68% 0.169 237.323);
+    --color-info-content: oklch(97% 0.013 236.62);
+    --color-success: oklch(53% 0.157 131.589);
+    --color-success-content: oklch(98% 0.014 180.72);
+    --color-warning: oklch(76% 0.188 70.08);
+    --color-warning-content: oklch(98% 0.022 95.277);
+    --color-error: oklch(55% 0.195 38.402);
+    --color-error-content: oklch(97% 0.014 343.198);
+    --radius-selector: 1rem;
+    --radius-field: 1rem;
+    --radius-box: 1rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 1;
+    --noise: 1;
+}
+
+@plugin "daisyui/theme" {
+    name: "darkNew";
+    default: false;
+    prefersdark: true;
+    color-scheme: "dark";
+    --color-base-100: oklch(25.33% 0.016 252.42);
+    --color-base-200: oklch(23.26% 0.014 253.1);
+    --color-base-300: oklch(21.15% 0.012 254.09);
+    --color-base-content: oklch(97.807% 0.029 256.847);
+    --color-primary: oklch(85% 0.199 91.936);
+    --color-primary-content: oklch(27% 0.033 256.848);
+    --color-secondary: oklch(35% 0.144 278.697);
+    --color-secondary-content: oklch(96% 0.018 272.314);
+    --color-accent: oklch(85% 0.199 91.936);
+    --color-accent-content: oklch(27% 0.033 256.848);
+    --color-neutral: oklch(27% 0.033 256.848);
+    --color-neutral-content: oklch(96% 0.018 272.314);
+    --color-info: oklch(74% 0.16 232.661);
+    --color-info-content: oklch(29% 0.066 243.157);
+    --color-success: oklch(76% 0.177 163.223);
+    --color-success-content: oklch(37% 0.077 168.94);
+    --color-warning: oklch(75% 0.183 55.934);
+    --color-warning-content: oklch(41% 0.112 45.904);
+    --color-error: oklch(50% 0.213 27.518);
+    --color-error-content: oklch(27% 0.105 12.094);
+    --radius-selector: 1rem;
+    --radius-field: 1rem;
+    --radius-box: 1rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 1;
+    --noise: 1;
 }

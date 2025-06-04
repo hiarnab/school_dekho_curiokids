@@ -1,0 +1,514 @@
+@php
+    // FORM SELECT OPTIONS
+    $states = [
+        'Andaman and Nicobar Islands',
+        'Andhra Pradesh',
+        'Arunachal Pradesh',
+        'Assam',
+        'Bihar',
+        'Chandigarh',
+        'Chhattisgarh',
+        'Dadra and Nagar Haveli',
+        'Goa',
+        'Gujarat',
+        'Haryana',
+        'Himachal Pradesh',
+        'Jammu and Kashmir',
+        'Jharkhand',
+        'Karnataka',
+        'Kerala',
+        'Lakshadweep',
+        'Madhya Pradesh',
+        'Maharashtra',
+        'Manipur',
+        'Meghalaya',
+        'Mizoram',
+        'Nagaland',
+        'NCR of Delhi',
+        'Odisha',
+        'Puducherry',
+        'Punjab',
+        'Rajastan',
+        'Sikkim',
+        'Tamil Nadu',
+        'Telangana',
+        'Tripura',
+        'Uttarakhand',
+        'Uttar Pradesh',
+        'West Bengal',
+    ];
+
+    $leadSources = [
+        'Chat',
+        'Euro Parent',
+        'Hoarding',
+        'Internet',
+        'Website - Franchise Enquiry',
+        'Magazine',
+        'Newspaper',
+        'Facebook',
+        'Planned Local Activity',
+        'Radio',
+        'Reference',
+        'TV',
+        'Franchisee India',
+        'Advert',
+    ];
+    $leadStatuses = ['Open', 'Qualified', 'Lost', 'Next AY', 'Junk Lead'];
+
+    // “FEATURES” (Investment, Vision, Space)
+    $features = [
+        [
+            'img' => 'https://www.eurokidsindia.com/ek-new-2023/images/franchiseprogram/An-investment.webp',
+            'title' => 'An investment of ₹ 15-20 lakh*',
+        ],
+        [
+            'img' => 'https://www.eurokidsindia.com/ek-new-2023/images/franchiseprogram/Long-term-Vision.webp',
+            'title' => 'Long-term Vision',
+        ],
+        [
+            'img' => 'https://www.eurokidsindia.com/ek-new-2023/images/franchiseprogram/Minimum-1500-sq-ft-icon.webp',
+            'title' => 'Minimum 1500 sq ft place required',
+        ],
+    ];
+
+    // WHY CHOOSE / STATS
+    $stats = [
+        [
+            'img' => 'https://www.eurokidsindia.com/ek-new-2023/images/franchiseprogram/1200-pre-schools.png',
+            'number' => '1,700+',
+            'label' => 'pre-schools',
+        ],
+        [
+            'img' => 'https://www.eurokidsindia.com/ek-new-2023/images/franchiseprogram/21-years-of-expertise.png',
+            'number' => '23+',
+            'label' => 'years of expertise',
+        ],
+        [
+            'img' => 'https://www.eurokidsindia.com/ek-new-2023/images/franchiseprogram/500000-children-nurtured.png',
+            'number' => '7,00,000+',
+            'label' => 'children nurtured',
+        ],
+        [
+            'img' => 'https://www.eurokidsindia.com/ek-new-2023/images/franchiseprogram/350-locations.png',
+            'number' => '400+',
+            'label' => 'locations',
+        ],
+        [
+            'img' => 'https://www.eurokidsindia.com/ek-new-2023/images/franchiseprogram/3-countries.png',
+            'number' => '3',
+            'label' => 'countries',
+        ],
+        [
+            'img' =>
+                'https://www.eurokidsindia.com/ek-new-2023/images/franchiseprogram/35000-hrs-of-curriculum-research.png',
+            'number' => '35,000+',
+            'label' => 'hrs of curriculum research',
+        ],
+    ];
+
+    // EDGE360 SUPPORT FEATURES
+    $supportFeatures = [
+        [
+            'img' =>
+                'https://www.eurokidsindia.com/ek-new-2023/images/franchiseprogram/Infrastructure-Ambience-Design.webp',
+            'title' => 'Infrastructure & Ambience Design',
+        ],
+        [
+            'img' => 'https://www.eurokidsindia.com/ek-new-2023/images/franchiseprogram/Furniture-Equipment.webp',
+            'title' => 'Furniture & Equipment',
+        ],
+        [
+            'img' => 'https://www.eurokidsindia.com/ek-new-2023/images/franchiseprogram/Researched-Curriculum.webp',
+            'title' => 'Researched Curriculum',
+        ],
+        [
+            'img' => 'https://www.eurokidsindia.com/ek-new-2023/images/franchiseprogram/Teaching-Aids.webp',
+            'title' => 'Teaching Aids',
+        ],
+        [
+            'img' =>
+                'https://www.eurokidsindia.com/ek-new-2023/images/franchiseprogram/Business-Management-Portal.webp',
+            'title' => 'Business Management Portal',
+        ],
+        [
+            'img' =>
+                'https://www.eurokidsindia.com/ek-new-2023/images/franchiseprogram/Teacher-Training-Skill-Updating.webp',
+            'title' => 'Teacher Training & Skill Updating',
+        ],
+        [
+            'img' =>
+                'https://www.eurokidsindia.com/ek-new-2023/images/franchiseprogram/Marketing-Operational-Support.webp',
+            'title' => 'Marketing & Operational Support',
+        ],
+        [
+            'img' => 'https://www.eurokidsindia.com/ek-new-2023/images/franchiseprogram/Lead-Management -Support.webp',
+            'title' => 'Lead Management Support',
+        ],
+    ];
+
+    // AWARDS
+    $awards = [
+        [
+            'img' =>
+                'https://www.eurokidsindia.com/ek-new-2023/images/Admission/awards/PreschoolFranchisoroftheYear2023byBWBusinesWorld.webp',
+            'title' => 'Preschool Franchisor of the Year 2023 by BW Business World',
+        ],
+        [
+            'img' =>
+                'https://www.eurokidsindia.com/ek-new-2023/images/Admission/awards/Top-100-Franchise-Opportunities-for-the-year-2022-Franchise-India.webp',
+            'title' => 'Franchise India 2022',
+        ],
+        [
+            'img' =>
+                'https://www.eurokidsindia.com/ek-new-2023/images/Admission/awards/Indo-Asian-Business-Excellence-Summit-2022.webp',
+            'title' => 'Indo-Asian Business Excellence Summit 2022',
+        ],
+        [
+            'img' =>
+                'https://www.eurokidsindia.com/ek-new-2023/images/Admission/awards/Franchise-Award-2022-Franchisor-of-the-year.webp',
+            'title' => 'Franchisor of the Year 2022',
+        ],
+        [
+            'img' =>
+                'https://www.eurokidsindia.com/ek-new-2023/images/Admission/awards/EK-Franchisor-of-the-Year-Pre-School2025-1.png',
+            'title' => 'Franchisor of the Year Pre-School 2025',
+        ],
+        [
+            'img' => 'https://www.eurokidsindia.com/ek-new-2023/images/Admission/awards/BWBusinessWorldAward2024.webp',
+            'title' => 'Leading Preschool in India 2024',
+        ],
+        [
+            'img' => 'https://www.eurokidsindia.com/ek-new-2023/images/Admission/awards/TheBusinessFame.webp',
+            'title' => 'Most Desired Preschool Brands 2024',
+        ],
+        [
+            'img' => 'https://www.eurokidsindia.com/ek-new-2023/images/Admission/awards/IndianEducationAwards.webp',
+            'title' => 'Best Pre-School Chain of the Year 2024',
+        ],
+    ];
+
+    // TESTIMONIALS
+    $testimonials = [
+        [
+            'videoUrl' => 'https://www.youtube.com/embed/7gZXT1A-m9E',
+            'img' => '../ek-new-2023/images/Partner-Speak/Ms-Sapna-Meisheri.png',
+            'name' => 'Ms Sapna Meisheri',
+            'location' => 'EuroKids Pre-school | Chembur',
+            'text' => 'Ms Sapna Meisheri talks about her journey and future growth plans.',
+        ],
+        [
+            'videoUrl' => 'https://www.youtube.com/embed/Z4dEhqoZtXQ',
+            'img' => '../ek-new-2023/images/Partner-Speak/Ms-Rajeshwari.png',
+            'name' => 'Ms Rajeshwari Subramanian',
+            'location' => 'EuroKids Pre-school | Mumbai',
+            'text' => 'Here is the success story of one of our proud partners.',
+        ],
+        [
+            'videoUrl' => 'https://www.youtube.com/embed/OBlS0_K-IpU',
+            'img' => '../ek-new-2023/images/Partner-Speak/Ms-Sheetal.png',
+            'name' => 'Ms Sheetal',
+            'location' => 'EuroKids Pre-school | Nepal',
+            'text' => 'Why is EuroKids Asia\'s leading pre-school brand? Hear it from Ms Sheetal.',
+        ],
+    ];
+
+    // FAQs
+    $faqs = [
+        [
+            'question' => 'What is the total investment required to start a EuroKids Preschool franchise in India?',
+            'answer' =>
+                'Starting a EuroKids franchise in India requires a total investment ranging between ₹15 - ₹20 lakhs, depending on location and size. This covers franchise fees, initial set-up costs, operational costs, safety equipment and furnishings.',
+        ],
+        [
+            'question' => 'Do you provide infrastructural guidance to the franchisees?',
+            'answer' =>
+                'Yes, EuroKids offers detailed guidance on setting up infrastructure—layout, classrooms, play areas, safety, and regulatory compliance—ensuring a child-friendly environment.',
+        ],
+        [
+            'question' => 'Where can I purchase my preschool franchise\'s equipment, books, toys, and other materials?',
+            'answer' =>
+                'All required equipment, books, toys, and learning materials are sourced through EuroKids\' trusted vendors. These costs are covered in our franchise package.',
+        ],
+        [
+            'question' => 'What training and support will I receive to manage the preschool?',
+            'answer' =>
+                'EuroKids provides comprehensive operational training—curriculum implementation, safety protocols, parent communication—and ongoing support so you can run a successful franchise.',
+        ],
+        [
+            'question' => 'How can I determine the ideal location for the preschool?',
+            'answer' =>
+                'Our team helps you select a location in a safe, accessible residential area with high visibility and foot traffic, analyzing demographics and local demand.',
+        ],
+        [
+            'question' => 'How many staff members will I need to hire?',
+            'answer' =>
+                'Typically 5–10 staff (teachers, assistants, support) depending on size and student count. We also assist with recruitment and training.',
+        ],
+        [
+            'question' => 'What other support can I expect from EuroKids?',
+            'answer' =>
+                'In addition to infrastructure and training, you get marketing assistance, operational guidance, curriculum updates, parent engagement strategies, and promotional help.',
+        ],
+        [
+            'question' => 'Are there preschool franchise opportunities available in other cities?',
+            'answer' =>
+                'Yes, EuroKids offers preschool franchises across multiple Indian cities—metros and smaller towns. <a href="https://www.eurokidsindia.com/franchise-location/">Explore locations</a>.',
+        ],
+    ];
+
+@endphp
+
+
+{{-- FRANCHISE HERO SECTION --}}
+<section class="bg-gray-100 py-12">
+    <div class="container mx-auto text-center">
+        <img src="https://www.eurokidsindia.com/ek-new-2023/images/franchiseprogram/main-01.webp" alt="Franchise Hero"
+            class="mx-auto mb-6 w-full max-w-xl">
+        <h1 class="text-3xl font-bold mb-8">Partner with Best Preschool Franchise in India</h1>
+
+        {{-- FRANCHISE ENQUIRY FORM --}}
+        <form action="{{ url('/submit-franchise') }}" method="POST"
+            class="bg-white shadow-md rounded-lg p-6 mx-auto max-w-2xl">
+            @csrf
+            <h2 class="text-2xl font-semibold mb-4">Franchise Opportunity</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input type="text" name="first_name" placeholder="First Name *" class="border rounded px-3 py-2">
+                <input type="text" name="last_name" placeholder="Last Name *" class="border rounded px-3 py-2">
+                <input type="text" name="email" placeholder="Email *" class="border rounded px-3 py-2">
+                <input type="text" name="phone" placeholder="Phone *" class="border rounded px-3 py-2">
+                <input type="text" name="organization" placeholder="Organization" class="border rounded px-3 py-2">
+                <input type="text" name="designation" placeholder="Designation" class="border rounded px-3 py-2">
+                <input type="text" name="city" placeholder="City" class="border rounded px-3 py-2">
+                <input type="text" name="pincode" placeholder="Pincode" class="border rounded px-3 py-2">
+
+                {{-- STATE SELECT --}}
+                <select name="state" class="border rounded px-3 py-2">
+                    <option value="">Select State *</option>
+                    @foreach ($states as $st)
+                        <option value="{{ $st }}">{{ $st }}</option>
+                    @endforeach
+                </select>
+
+                {{-- CITY SELECT (populated dynamically via AJAX in a real app) --}}
+                <select name="city_select" class="border rounded px-3 py-2">
+                    <option value="">Select City *</option>
+                </select>
+
+                {{-- LEAD SOURCE --}}
+                <div class="col-span-full">
+                    <label class="font-medium">Lead Source</label>
+                    <select name="lead_source" class="w-full border rounded px-3 py-2">
+                        <option value="">-None-</option>
+                        @foreach ($leadSources as $ls)
+                            <option value="{{ $ls }}">{{ $ls }}</option>
+                        @endforeach
+                    </select>
+                </div>
+
+                {{-- LEAD STATUS --}}
+                <div class="col-span-full">
+                    <label class="font-medium">Lead Status</label>
+                    <select name="lead_status" class="w-full border rounded px-3 py-2">
+                        <option value="">-None-</option>
+                        @foreach ($leadStatuses as $lstatus)
+                            <option value="{{ $lstatus }}">{{ $lstatus }}</option>
+                        @endforeach
+                    </select>
+                </div>
+
+                {{-- WEB PAGE URL --}}
+                <div class="col-span-full">
+                    <label class="font-medium">Web Page URL</label>
+                    <input type="text" name="web_url" placeholder="Web Page URL"
+                        class="w-full border rounded px-3 py-2">
+                </div>
+
+                {{-- ADDITIONAL FIELDS --}}
+                <input type="text" name="field_extra_1" placeholder="Extra Field 1" class="border rounded px-3 py-2">
+                <input type="text" name="field_extra_2" placeholder="Extra Field 2" class="border rounded px-3 py-2">
+                <input type="text" name="field_extra_3" placeholder="Extra Field 3" class="border rounded px-3 py-2">
+                <input type="text" name="field_extra_4" placeholder="Extra Field 4" class="border rounded px-3 py-2">
+                <input type="text" name="field_extra_5" placeholder="Extra Field 5" class="border rounded px-3 py-2">
+                <input type="text" name="field_extra_6" placeholder="Extra Field 6" class="border rounded px-3 py-2">
+                <input type="text" name="field_extra_7" placeholder="Extra Field 7" class="border rounded px-3 py-2">
+                <input type="text" name="field_extra_8" placeholder="Extra Field 8" class="border rounded px-3 py-2">
+                <input type="text" name="field_extra_9" placeholder="Extra Field 9"
+                    class="border rounded px-3 py-2">
+                <input type="text" name="field_extra_10" placeholder="Extra Field 10"
+                    class="border rounded px-3 py-2">
+            </div>
+
+            <div class="mt-4">
+                <label class="inline-flex items-center">
+                    <input type="checkbox" name="agree" required class="mr-2">
+                    I have read and agree to the Privacy Policy.
+                </label>
+            </div>
+
+            <div class="mt-6">
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded">
+                    Submit Inquiry
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+{{-- FEATURES SECTION --}}
+<section class="py-12">
+    <div class="container mx-auto">
+        <h2 class="text-2xl font-semibold text-center mb-8">Here's all you need for the Preschool Franchise</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            @foreach ($features as $f)
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <img src="{{ $f['img'] }}" alt="{{ $f['title'] }}" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-medium">{!! nl2br(e($f['title'])) !!}</h3>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+
+{{-- WHY CHOOSE / STATS SECTION --}}
+<section class="bg-gray-50 py-12">
+    <div class="container mx-auto">
+        <h2 class="text-2xl font-semibold text-center mb-8">Why Choose EuroKids?</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+            @foreach ($stats as $s)
+                <div>
+                    <img src="{{ $s['img'] }}" alt="{{ $s['label'] }}" class="w-24 mx-auto mb-2">
+                    <h3 class="text-xl font-bold">{{ $s['number'] }}</h3>
+                    <p class="text-sm">{{ $s['label'] }}</p>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+
+{{-- EDGE360 SUPPORT SECTION --}}
+<section class="py-12">
+    <div class="container mx-auto">
+        <h2 class="text-2xl font-semibold text-center mb-8">All-round Support with EDGE360</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            @foreach ($supportFeatures as $sf)
+                <div class="bg-white shadow rounded-lg text-center p-6">
+                    <img src="{{ $sf['img'] }}" alt="{{ $sf['title'] }}" class="w-20 h-20 mx-auto mb-4">
+                    <h3 class="text-lg font-medium">{!! nl2br(e($sf['title'])) !!}</h3>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+
+{{-- AWARDS SECTION --}}
+<section class="bg-gray-50 py-12">
+    <div class="container mx-auto">
+        <h2 class="text-2xl font-semibold text-center mb-8">India's Most Awarded Pre-school</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            @foreach ($awards as $award)
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <figure>
+                        <img src="{{ $award['img'] }}" alt="{{ $award['title'] }}"
+                            class="w-full h-48 object-cover">
+                    </figure>
+                    <div class="p-4">
+                        <h3 class="text-base font-medium">{{ $award['title'] }}</h3>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+
+{{-- TESTIMONIALS SECTION --}}
+<section class="py-12">
+    <div class="container mx-auto">
+        <h2 class="text-2xl font-semibold text-center mb-4">Testimonial</h2>
+        <h3 class="text-xl text-center mb-8">Trust EuroKids Expertise</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            @foreach ($testimonials as $t)
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <a href="{{ $t['videoUrl'] }}" target="_blank">
+                        <img src="{{ $t['img'] }}" alt="{{ $t['name'] }}" class="w-full h-48 object-cover">
+                    </a>
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold">{{ $t['name'] }}</h4>
+                        <p class="text-sm mb-2">{{ $t['location'] }}</p>
+                        <p class="text-sm">{{ $t['text'] }}</p>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+
+        <div class="text-center mt-6">
+            <a href="https://www.eurokidsindia.com/partner-testimonials.php" class="text-blue-600 hover:underline">
+                See All
+            </a>
+        </div>
+    </div>
+</section>
+
+
+{{-- FAQ SECTION --}}
+<section class="bg-gray-100 py-12">
+    <div class="container mx-auto">
+        <h2 class="text-2xl font-semibold text-center mb-8">Frequently Asked Questions (FAQs)</h2>
+        <ul class="space-y-6">
+            @foreach ($faqs as $faq)
+                <li>
+                    <h3 class="text-lg font-medium mb-2">{{ $faq['question'] }}</h3>
+                    <p class="text-sm">{!! $faq['answer'] !!}</p>
+                </li>
+            @endforeach
+        </ul>
+    </div>
+</section>
+
+
+{{-- INFO SECTIONS --}}
+<section class="py-12">
+    <div class="container mx-auto space-y-6">
+        <div>
+            <h2 class="text-2xl font-semibold mb-2">Preschool & Playschool Franchise in India</h2>
+            <p>
+                Starting an education franchise in India, especially a preschool franchise, is a smart move if you’re
+                planning to start your own business. As per the paper
+                <a href="https://asercentre.org/wp-content/uploads/2022/12/The-pre-school-years-in-India_Progress-since-NEP-2020_Rukmini-Banerji.pdf"
+                    class="text-blue-600 hover:underline" target="_blank">
+                    “The Pre-School Years in India: Progress Since NEP 2020”
+                </a>, preschool enrollment has jumped from 68.1% in 2018 to 77.4% in 2024, making preschool education a
+                profitable business opportunity. Moreover, with NEP 2020 stressing that children begin Class 1 at age
+                six, parents are focusing more on preschool. This makes investing in a play school franchise a strong,
+                long-term opportunity.
+            </p>
+            <p>
+                EuroKids is one of the best preschools in India, making it an obvious choice. We’ve created a smart and
+                affordable preschool franchise model that meets international standards—you don’t need to spend a
+                fortune to offer high-quality learning. With EuroKids, join one of the best preschool franchise
+                opportunities in the country and make a real difference in children’s lives.
+            </p>
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-semibold mb-2">Investing in the Preschool Franchise Industry</h2>
+            <p>
+                If you want a rewarding business with great growth potential, an education franchise in India is worth
+                exploring. Owning a preschool franchise lets you build something meaningful while earning a stable
+                income. If you’re planning to switch from a job to entrepreneurship, EuroKids preschool franchise
+                opportunities simplify the process: cost-effective, easy setup, full support, expert advice, marketing
+                help, and training. Our tried-and-tested model helps you avoid common pitfalls and scale quickly.
+                Partner with India’s top preschool franchise and create a lasting impact in your community.
+            </p>
+        </div>
+    </div>
+</section>
