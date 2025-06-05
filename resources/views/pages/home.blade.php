@@ -144,93 +144,75 @@
     </div>
 </section>
 <section class="bg-base-100">
-    <div class="max-w-(--breakpoint-xl) mx-auto px-5 py-24">
+    <div class="max-w-(--breakpoint-2xl) mx-auto px-5 py-24">
         <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20">Why Choose Us as <br
                 class="hidden sm:block">Your Preschool Franchise Partner? </h1>
         <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6 pb-12">
-            <div class="p-4 md:w-1/3 flex">
+            <div class="p-4 md:w-1/3 flex items-center">
                 <div
-                    class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-primary/10 text-primary mb-4 flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                    </svg>
+                    class="w-24 h-24 inline-flex items-center justify-center rounded-full bg-primary/10 text-primary/60 flex-shrink-0">
+                    <i class="ti text-6xl ti-building-community"></i>
                 </div>
-                <div class="flex-grow pl-6">
-                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">25+ centres across India</h2>
-                    <p class="leading-relaxed text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Itaque, libero.</p>
+                <div class="flex-grow pl-6 items-center flex">
+                    <h2 class="text-gray-900  text-3xl  title-font font-medium">25+ Centres Across India</h2>
+
                 </div>
             </div>
-            <div class="p-4 md:w-1/3 flex">
+            <div class="p-4 md:w-1/3 flex items-center">
                 <div
-                    class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-primary/10 text-primary mb-4 flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                    </svg>
+                    class="w-24 h-24 inline-flex items-center justify-center rounded-full bg-primary/10 text-primary/60 flex-shrink-0">
+                    <i class="ti text-6xl  ti-certificate"></i>
                 </div>
-                <div class="flex-grow pl-6">
-                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Award-winning preschool curriculum
+                <div class="flex-grow pl-6 items-center flex">
+                    <h2 class="text-gray-900 text-3xl title-font font-medium">Award-Winning Preschool Curriculum
                     </h2>
-                    <p class="leading-relaxed text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Itaque, libero.</p>
+
                 </div>
             </div>
-            <div class="p-4 md:w-1/3 flex">
+            <div class="p-4 md:w-1/3 flex items-center">
                 <div
-                    class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-primary/10 text-primary mb-4 flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    class="w-24  h-24 inline-flex items-center  justify-center rounded-full bg-primary/10 text-primary/60 mb-4 flex-shrink-0 fill-accent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-primary/60" fill="none" viewBox="0 0 24 24"
+                        id="Support-Agent-Fill--Streamline-Rounded-Fill-Material" height="72" width="72">
+
+                        <path
+                            d="M11.75 21c-0.2125 0 -0.3906 -0.07235 -0.53425 -0.217 -0.14385 -0.1445 -0.21575 -0.32365 -0.21575 -0.5375 0 -0.21365 0.0719 -0.39135 0.21575 -0.533 0.14365 -0.14165 0.32175 -0.2125 0.53425 -0.2125H19.5V11.9c0 -2.0615 -0.72765 -3.81015 -2.183 -5.246C15.86165 5.218 14.08935 4.5 12 4.5s-3.86165 0.718 -5.317 2.154C5.22765 8.08985 4.5 9.8385 4.5 11.9V17.5c0 0.14165 -0.047915 0.2604 -0.14375 0.35625C4.260415 17.9521 4.141665 18 4 18c-0.55 0 -1.020835 -0.19585 -1.4125 -0.5875C2.195835 17.02085 2 16.55 2 16v-2c0 -0.35 0.0875 -0.67915 0.2625 -0.9875 0.175 -0.30835 0.420835 -0.55415 0.7375 -0.7375l0.075 -1.325c0.133335 -1.13335 0.4625 -2.18335 0.9875 -3.15s1.18335 -1.80835 1.975 -2.525c0.79165 -0.716665 1.7 -1.275 2.725 -1.675C9.7875 3.2 10.86665 3 12 3c1.13335 0 2.20835 0.2 3.225 0.6 1.01665 0.4 1.925 0.954165 2.725 1.6625 0.8 0.70835 1.45835 1.54585 1.975 2.5125 0.51665 0.96665 0.85 2.01665 1 3.15l0.075 1.3c0.31665 0.15 0.5625 0.375 0.7375 0.675 0.175 0.3 0.2625 0.61665 0.2625 0.95v2.3c0 0.33335 -0.0875 0.65 -0.2625 0.95 -0.175 0.3 -0.42085 0.525 -0.7375 0.675V19.5c0 0.4125 -0.14685 0.7656 -0.4405 1.05925C20.26565 20.8531 19.9125 21 19.5 21H11.75Zm-2.7545 -7.25c-0.21365 0 -0.39135 -0.07235 -0.533 -0.217 -0.14165 -0.1445 -0.2125 -0.32365 -0.2125 -0.5375 0 -0.21365 0.07235 -0.39135 0.217 -0.533 0.1445 -0.14165 0.32365 -0.2125 0.5375 -0.2125 0.21365 0 0.39135 0.07235 0.533 0.217 0.14165 0.1445 0.2125 0.32365 0.2125 0.5375 0 0.21365 -0.07235 0.39135 -0.217 0.533 -0.1445 0.14165 -0.32365 0.2125 -0.5375 0.2125Zm6 0c-0.21365 0 -0.39135 -0.07235 -0.533 -0.217 -0.14165 -0.1445 -0.2125 -0.32365 -0.2125 -0.5375 0 -0.21365 0.07235 -0.39135 0.217 -0.533 0.1445 -0.14165 0.32365 -0.2125 0.5375 -0.2125 0.21365 0 0.39135 0.07235 0.533 0.217 0.14165 0.1445 0.2125 0.32365 0.2125 0.5375 0 0.21365 -0.07235 0.39135 -0.217 0.533 -0.1445 0.14165 -0.32365 0.2125 -0.5375 0.2125ZM6.025 12.45c-0.11665 -1.76665 0.41665 -3.28335 1.6 -4.55 1.18335 -1.26665 2.65835 -1.9 4.425 -1.9 1.45 0 2.70835 0.47915 3.775 1.4375s1.71665 2.15415 1.95 3.5875c-1.48335 -0.01665 -2.8375 -0.43335 -4.0625 -1.25s-2.17315 -1.89165 -2.8445 -3.225c-0.262 1.33335 -0.82215 2.52085 -1.6805 3.5625 -0.85835 1.04165 -1.9125 1.82085 -3.1625 2.3375Z"
+                            stroke-width="0.5"></path>
                     </svg>
                 </div>
-                <div class="flex-grow pl-6">
-                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">360° franchise support </h2>
-                    <p class="leading-relaxed text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Itaque, libero.</p>
+                <div class="flex-grow pl-6 items-center flex">
+                    <h2 class="text-gray-900 text-3xl title-font font-medium">360° Franchise Support </h2>
+
                 </div>
             </div>
-            <div class="p-4 md:w-1/3 flex">
+            <div class="p-4 md:w-1/3 flex items-center">
                 <div
-                    class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-primary/10 text-primary mb-4 flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                    </svg>
+                    class="w-24 h-24 inline-flex items-center justify-center rounded-full bg-primary/10 text-primary/60 flex-shrink-0">
+                    <i class=" text-6xl ti ti-percentage "></i>
                 </div>
-                <div class="flex-grow pl-6">
-                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">ROI in 12-18 months </h2>
-                    <p class="leading-relaxed text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Itaque, libero.</p>
+                <div class="flex-grow pl-6 items-center flex">
+                    <h2 class="text-gray-900 text-3xl title-font font-medium">ROI in 12-18 Months </h2>
+
                 </div>
             </div>
-            <div class="p-4 md:w-1/3 flex">
+            <div class="p-4 md:w-1/3 flex items-center">
                 <div
-                    class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-primary/10 text-primary mb-4 flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                    </svg>
+                    class="w-24 h-24 inline-flex items-center justify-center rounded-full bg-primary/10 text-primary/60 flex-shrink-0">
+                    <i class="ti text-6xl ti-currency-rupee"></i>
                 </div>
-                <div class="flex-grow pl-6">
-                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Affordable setup cost </h2>
-                    <p class="leading-relaxed text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Itaque, libero.</p>
+                <div class="flex-grow pl-6 items-center flex">
+                    <h2 class="text-gray-900 text-3xl title-font font-medium">Affordable Setup Cost </h2>
+
                 </div>
             </div>
-            <div class="p-4 md:w-1/3 flex">
+            <div class="p-4 md:w-1/3 flex items-center">
                 <div
-                    class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-primary/10 text-primary mb-4 flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                    </svg>
+                    class="w-26 h-26 inline-flex items-center justify-center rounded-full bg-primary/10 text-primary/60 flex-shrink-0">
+                    <i class="ti text-6xl ti-chart-histogram"></i>
                 </div>
-                <div class="flex-grow pl-6">
-                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Marketing assistance </h2>
-                    <p class="leading-relaxed text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Itaque, libero.</p>
+                <div class="flex-grow pl-6 items-center flex">
+                    <h2 class="text-gray-900 text-3xl title-font font-medium">Marketing Assistance </h2>
+
                 </div>
             </div>
         </div>
