@@ -1,8 +1,125 @@
+@php
+    $states = [
+        'Andaman and Nicobar Islands',
+        'Andhra Pradesh',
+        'Arunachal Pradesh',
+        'Assam',
+        'Bihar',
+        'Chandigarh',
+        'Chhattisgarh',
+        'Dadra and Nagar Haveli',
+        'Goa',
+        'Gujarat',
+        'Haryana',
+        'Himachal Pradesh',
+        'Jammu and Kashmir',
+        'Jharkhand',
+        'Karnataka',
+        'Kerala',
+        'Lakshadweep',
+        'Madhya Pradesh',
+        'Maharashtra',
+        'Manipur',
+        'Meghalaya',
+        'Mizoram',
+        'Nagaland',
+        'NCR of Delhi',
+        'Odisha',
+        'Puducherry',
+        'Punjab',
+        'Rajastan',
+        'Sikkim',
+        'Tamil Nadu',
+        'Telangana',
+        'Tripura',
+        'Uttarakhand',
+        'Uttar Pradesh',
+        'West Bengal',
+    ];
+    $faqs = [
+        [
+            'question' => 'What is the total investment required to start the franchise?',
+            'answer' =>
+                'The total investment required is between <strong>₹7–8 lakhs</strong>, which includes setup, branding, training, and launch support.',
+        ],
+        [
+            'question' => 'What is the expected return on investment (ROI) and breakeven timeline?',
+            'answer' =>
+                'Our partners typically achieve <strong>ROI within 12–18 months</strong>, depending on location and enrolment.',
+        ],
+        [
+            'question' => 'Do I need prior experience in education to start a preschool franchise?',
+            'answer' =>
+                'No prior experience is required—just a <strong>passion for education</strong>. We provide complete training and ongoing operational support.',
+        ],
+        [
+            'question' => 'What kind of training and support do you provide?',
+            'answer' =>
+                ' We offer <strong>360&deg; franchise support</strong> including teacher training, curriculum guidance, operational planning, admissions help, and marketing assistance.',
+        ],
+        [
+            'question' => 'How much space is required and can I run it from my home or rented property?',
+            'answer' =>
+                '  You&rsquo;ll need <strong>1200&ndash;2500 sq. ft.</strong> of space. It can be <strong>owned or rented</strong>, and we help with layout and design to create a child-friendly learning environment.',
+        ],
+        [
+            'question' => 'Will you help me with admissions and local marketing?',
+            'answer' =>
+                ' Yes, we provide <strong>marketing assistance</strong> through digital promotions, branding assets, and local strategy to help boost enrolments.',
+        ],
+        [
+            'question' => ' What curriculum do you follow and is it aligned with current education standards?',
+            'answer' =>
+                ' We use an <strong>award-winning preschool curriculum</strong> designed for holistic early childhood development and aligned with modern educational practices.',
+        ],
+        [
+            'question' => ' How long does it take to set up and launch the preschool after signing the agreement?',
+            'answer' =>
+                'Once the agreement is signed, setup and training typically take <strong>4&ndash;6 weeks</strong>, depending on site readiness.',
+        ],
+        [
+            'question' => 'Do I get exclusive territory rights in my area?',
+            'answer' =>
+                ' Yes, we offer <strong>location-based exclusivity</strong> to ensure you don&rsquo;t face competition from another franchise of our brand in your vicinity.',
+        ],
+        [
+            'question' => ' What happens if I want to exit the franchise later?',
+            'answer' =>
+                '  If you wish to exit, we offer <strong>transparent exit terms</strong> as per the franchise agreement, and we assist in smooth transition or transfer.',
+        ],
+    ];
 
-@php $states = [ 'Andaman and Nicobar Islands', 'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Dadra and Nagar Haveli', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Lakshadweep', 'Madhya Pradesh', 'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'NCR of Delhi', 'Odisha', 'Puducherry', 'Punjab', 'Rajastan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttarakhand', 'Uttar Pradesh', 'West Bengal', ]; @endphp 
-@extends('layouts.app.app') @section('title', 'Home Page') @section('content') <section
-    class="max-w-(--breakpoint-xl) mx-auto">
+    $testimonials = [
+        [
+            'name' => 'Amit Verma',
+            'location' => 'Pune',
+            'quote' => 'With their full support, I started my first preschool and broke even in just 14 months!',
+            'image' => '/testimonials/m.webp',
+        ],
+        [
+            'name' => 'Ritu Sharma',
+            'location' => 'Lucknow',
+            'quote' => 'This franchise helped me turn my passion into a profitable preschool in my own city.',
+            'image' => '/testimonials/f.webp',
+        ],
+        [
+            'name' => 'Nilesh Patel',
+            'location' => 'Gujarat',
+            'quote' => 'From teacher to proud owner of 3 branches—thanks to their expert guidance!',
+            'image' => '/testimonials/m2.webp',
+        ],
+        [
+            'name' => 'Pooja Das',
+            'location' => 'Siliguri',
+            'quote' => 'Even in a small town, my preschool became the top choice for parents within months.',
+            'image' => '/testimonials/f2.webp',
+        ],
+    ];
+@endphp
 
+
+
+@extends('layouts.app.app') @section('title', 'Home Page') @section('content') <section class="max-w-(--breakpoint-xl) mx-auto">
     <div class="hero min-h-screen">
         <div class="hero-content flex-col lg:flex-row-reverse grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="text-center lg:text-left">
@@ -10,65 +127,7 @@
                 <p class="py-6"> With India’s Fastest-Growing Preschool Franchise </p>
             </div>
             <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ml-auto mr-0">
-
-                <div class="card-body">
-                    <fieldset class="fieldset">
-                        <div class="max-w-sm"> <label for="name"
-                                class="block text-sm font-medium mb-2 dark:text-white">Full Name</label> <input
-                                type="text" name="name"
-                                class="py-2.5 sm:py-3 px-4 block w-full bg-white rounded-lg sm:text-sm focus:border-primary focus:ring-primary focus:ring-priborder-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 border border-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                                placeholder="Your full name" required /> </div>
-                        <div class="max-w-sm"> <label for="mob"
-                                class="block text-sm font-medium mb-2 dark:text-white">Mobile Number</label> <input
-                                type="number" name="phone"
-                                class="py-2.5 sm:py-3 px-4 block w-full bg-white rounded-lg sm:text-sm focus:border-primary focus:ring-primary focus:ring-priborder-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 border border-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                                placeholder="Your full name" required /> </div>
-                        <div class="max-w-sm"> <label for="state"
-                                class="block text-sm font-medium mb-2 dark:text-white">State</label>
-                            <div class="relative"> <select id="state" name="state"
-                                    data-hs-select='{ "placeholder": "Select option...", "toggleTag": "<button type=\"button\" aria-expanded=\"false\"></button>", "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative py-3 ps-4 pe-9 flex gap-x-2 text-nowrap w-full cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-sm focus:outline-hidden focus:ring-2 focus:ring-primary dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:focus:outline-hidden dark:focus:ring-1 dark:focus:ring-neutral-600", "dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto dark:bg-neutral-900 dark:border-neutral-700", "optionClasses": "py-2 px-4 w-full text-sm text-gray-800 cursor-pointer hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:text-neutral-200 dark:focus:bg-neutral-800", "optionTemplate": "<div class=\"flex justify-between items-center w-full\"><span data-title></span><span class=\"hidden hs-selected:block\"><svg class=\"shrink-0 size-3.5 text-blue-600 dark:text-priborder-primary \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span></div>" }'>
-                                    <option value="" selected disabled> Select State </option>
-                                    @foreach ($states as $st)
-                                        <option value="{{ $st }}">{{ $st }}</option>
-                                    @endforeach
-                                </select>
-                                <div class="absolute top-1/2 end-2.5 -translate-y-1/2"> <svg
-                                        class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
-                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="m7 15 5 5 5-5"></path>
-                                        <path d="m7 9 5-5 5 5"></path>
-                                    </svg> </div>
-                            </div>
-                        </div>
-                        <div class="max-w-sm"> <label for="city"
-                                class="block text-sm font-medium mb-2 dark:text-white">City</label>
-                            <div class="relative"> <select id="city" name="city"
-                                    data-hs-select='{ "placeholder": "Select option...", "toggleTag": "<button type=\"button\" aria-expanded=\"false\"></button>", "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative py-3 ps-4 pe-9 flex gap-x-2 text-nowrap w-full cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-sm focus:outline-hidden focus:ring-2 focus:ring-primary dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:focus:outline-hidden dark:focus:ring-1 dark:focus:ring-neutral-600", "dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto dark:bg-neutral-900 dark:border-neutral-700", "optionClasses": "py-2 px-4 w-full text-sm text-gray-800 cursor-pointer hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:text-neutral-200 dark:focus:bg-neutral-800", "optionTemplate": "<div class=\"flex justify-between items-center w-full\"><span data-title></span><span class=\"hidden hs-selected:block\"><svg class=\"shrink-0 size-3.5 text-blue-600 dark:text-priborder-primary \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span></div>" }'>
-                                    <option value="" selected disabled> Select State </option>
-                                    @foreach ($states as $st)
-                                        <option value="{{ $st }}">{{ $st }}</option>
-                                    @endforeach
-                                </select>
-                                <div class="absolute top-1/2 end-2.5 -translate-y-1/2"> <svg
-                                        class="shrink-0 size-4 text-gray-500 dark:text-neutral-500"
-                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="m7 15 5 5 5-5"></path>
-                                        <path d="m7 9 5-5 5 5"></path>
-                                    </svg> </div>
-                            </div>
-                        </div> <small class="text-xm mt-2 text-gray-500 dark:text-neutral-500"> By clicking on submit,
-                            you agree to our <a href="#" class="text-blue-600 hover:underline">Terms of
-                                Service</a> and <a href="#" class="text-blue-600 hover:underline">Privacy
-                                Policy</a>. </small>
-                    </fieldset>
-                    <div class=""> <button type="submit"
-                            class="btn btn-secondary w-full uppercase font-semibold tracking-wider"> Submit </button>
-                    </div>
-                </div>
+                @include('sections/forms/captureForm')
             </div>
         </div>
     </div>
@@ -176,10 +235,9 @@
             </div>
         </div>
         <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6  justify-center">
-    
 
-            <button type="button"
-                class="btn  max-w-sm  btn-primary w-full uppercase font-semibold tracking-wider"
+
+            <button type="button" class="btn  max-w-sm  btn-primary w-full uppercase font-semibold tracking-wider"
                 aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-vertically-centered-modal"
                 data-hs-overlay="#hs-vertically-centered-modal">
                 Apply Now <i class="ti ti-arrow-narrow-right"></i>
@@ -220,7 +278,7 @@
             </div>
         </div>
     </div>
-</section>   
+</section>
 <section class="bg-base-200">
     <div class="container px-5 py-24 mx-auto flex flex-wrap">
         <div
