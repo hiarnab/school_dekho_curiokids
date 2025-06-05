@@ -25,13 +25,14 @@
                         <path d="m6 6 12 12" />
                     </svg>
                     <span class="sr-only">Toggle navigation</span>
-                </button>
+                     </button>
             </div>
         </div>
         <div id="hs-navbar-example"
             class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block"
             aria-labelledby="hs-navbar-example-collapse">
             <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
+                <a class="font-medium text-blue-500 focus:outline-hidden" href="{{ route('login.view') }}" aria-current="page">Login</a>
                 <a class="font-medium text-blue-500 focus:outline-hidden" href="#" aria-current="page">Landing</a>
                 <a class="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
                     href="#">Account</a>
