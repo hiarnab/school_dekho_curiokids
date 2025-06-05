@@ -12,12 +12,12 @@
                     <fieldset class="fieldset">
                         <div class="max-w-sm"> <label for="name"
                                 class="block text-sm font-medium mb-2 dark:text-white">Full Name</label> <input
-                                type="text" id="name"
+                                type="text" name="name"
                                 class="py-2.5 sm:py-3 px-4 block w-full bg-white rounded-lg sm:text-sm focus:border-primary focus:ring-primary focus:ring-priborder-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 border border-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                                 placeholder="Your full name" required /> </div>
                         <div class="max-w-sm"> <label for="mob"
                                 class="block text-sm font-medium mb-2 dark:text-white">Mobile Number</label> <input
-                                type="number" id="mob"
+                                type="number" name="phone"
                                 class="py-2.5 sm:py-3 px-4 block w-full bg-white rounded-lg sm:text-sm focus:border-primary focus:ring-primary focus:ring-priborder-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 border border-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                                 placeholder="Your full name" required /> </div>
                         <div class="max-w-sm"> <label for="state"

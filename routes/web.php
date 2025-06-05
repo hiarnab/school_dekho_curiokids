@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\LoginController;
+use App\Http\Controllers\PreSchoolController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -10,9 +11,11 @@ Route::get('/', function () {
 
 Route::middleware(['admin'])->group(function(){
 Route::get('/dashboard',[DashboardController::class, 'index'])->name('dashboard');
-});
+});  
 
-
+// preschool
+Route::post('store',[PreSchoolController::class, 'store'])->name('preschool.submit');
+// preschool
 
 
 // login
