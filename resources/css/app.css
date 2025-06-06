@@ -23,42 +23,29 @@
     --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
         "Noto Color Emoji";
+    --color-gossamer-50: #eefbf6;
+    --color-gossamer-100: #d5f6e7;
+    --color-gossamer-200: #aeecd3;
+    --color-gossamer-300: #79dcbb;
+    --color-gossamer-400: #43c49d;
+    --color-gossamer-500: #20a984;
+    --color-gossamer-600: #149373;
+    --color-gossamer-700: #0f6d57;
+    --color-gossamer-800: #0e5746;
+    --color-gossamer-900: #0d473b;
+    --color-gossamer-950: #062822;
 
-    /* --color-smalt-50: #ebf7ff;
-    --color-smalt-100: #d1edff;
-    --color-smalt-200: #aee0ff;
-    --color-smalt-300: #76cfff;
-    --color-smalt-400: #35b3ff;
-    --color-smalt-500: #078bff;
-    --color-smalt-600: #0065ff;
-    --color-smalt-700: #004cff;
-    --color-smalt-800: #003ed7;
-    --color-smalt-900: #00379e;
-    --color-smalt-950: #062465;
-
-    --color-bright-sun-50: #fefce8;
-    --color-bright-sun-100: #fffac2;
-    --color-bright-sun-200: #fff287;
-    --color-bright-sun-300: #ffe343;
-    --color-bright-sun-400: #ffd325;
-    --color-bright-sun-500: #efb603;
-    --color-bright-sun-600: #ce8c00;
-    --color-bright-sun-700: #a46304;
-    --color-bright-sun-800: #884d0b;
-    --color-bright-sun-900: #733f10;
-    --color-bright-sun-950: #432005;
-
-    --color-sazerac-50: #fff8ed;
-    --color-sazerac-100: #fff3e1;
-    --color-sazerac-200: #fed9aa;
-    --color-sazerac-300: #fdbe74;
-    --color-sazerac-400: #fb973c;
-    --color-sazerac-500: #f97916;
-    --color-sazerac-600: #ea5e0c;
-    --color-sazerac-700: #c2460c;
-    --color-sazerac-800: #9a3812;
-    --color-sazerac-900: #7c3012;
-    --color-sazerac-950: #431607; */
+    --color-medium-red-violet-50: #faf5f9;
+    --color-medium-red-violet-100: #f7ecf4;
+    --color-medium-red-violet-200: #f1d9ea;
+    --color-medium-red-violet-300: #e6bbd8;
+    --color-medium-red-violet-400: #d690bf;
+    --color-medium-red-violet-500: #c66ea5;
+    --color-medium-red-violet-600: #ac4c84;
+    --color-medium-red-violet-700: #983e70;
+    --color-medium-red-violet-800: #7e365d;
+    --color-medium-red-violet-900: #6a3150;
+    --color-medium-red-violet-950: #3f182c;
 }
 
 @layer base {
