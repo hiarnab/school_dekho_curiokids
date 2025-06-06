@@ -7,11 +7,17 @@ use Illuminate\Http\Request;
 
 class PreSchoolController extends Controller
 {
+    public function index()
+    {
+        $pre_schools = PreSchool::all();
+        return view('admin.pre_schools.index',compact('pre_schools'));
+    }
     public function store(Request $request)
     {
+        // return $request->all();
         $request->validate([
             'name'=> 'required',
-            'phone'=> 'required',
+            'phone'=> 'required|digits:10',
             'state'=> 'required',
             'city'=> 'required',
         ]);
@@ -22,5 +28,6 @@ class PreSchoolController extends Controller
         $entity->state  = $request->state;
         $entity->city  = $request->city;
         $entity->save();
+        return redirect()->back();
     }
 }
