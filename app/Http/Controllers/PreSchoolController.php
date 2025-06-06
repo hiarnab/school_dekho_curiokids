@@ -28,6 +28,6 @@ class PreSchoolController extends Controller
         $entity->state  = $request->state;
         $entity->city  = $request->city;
         $entity->save();
-        return redirect()->back();
+        return redirect()->back()->with('success','Data added successfully');
     }
 }

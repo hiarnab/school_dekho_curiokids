@@ -38,6 +38,22 @@
     ];
 @endphp
 
+@if(session('success'))
+    <div id="success-alert" class="alert alert-success transition-opacity duration-1000 ease-in-out">
+        {{session('success')}}
+    </div>
+
+     <script>
+        setTimeout(function() {
+            const alert = document.getElementById('success-alert');
+            if (alert) {
+                alert.style.opacity = '0';
+                setTimeout(() => alert.remove(), 1000);
+            }
+        }, 3000); 
+    </script>
+@endif
+
 
 <form class="card-body" action="{{ route('preschool.submit') }}" method="POST">
     @csrf
