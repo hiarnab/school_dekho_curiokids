@@ -10,7 +10,13 @@ Route::get('/', function () {
 });
 
 Route::middleware(['admin'])->group(function(){
+
 Route::get('/dashboard',[DashboardController::class, 'index'])->name('dashboard');
+
+// preschool
+Route::get('/schools',[PreSchoolController::class, 'index'])->name('pre.schools');
+// preschool
+
 });  
 
 // preschool
